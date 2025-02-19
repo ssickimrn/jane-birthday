@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #596EB1;
+    padding: 20px;
+}
+
+h2 {
+    color: #1B0F22;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #E2D5F1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: #B4C4F6;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.item img {
+    width: 120px; /* Slightly bigger for better clarity */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Ensure it doesn’t stretch too much */
+    object-fit: contain; /* Ensures the whole image fits without cropping */
+    border-radius: 10px;
+    margin-right: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.item img:hover {
+    transform: scale(1.2);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Lightbox Background */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Lightbox Image */
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Close Button */
+#lightbox span {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.item p {
+    margin: 0;
+    flex: 1; /* Allows text to take up remaining space */
+    text-align: left;
+}
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background: #3A2F70;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}

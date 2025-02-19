@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        <h1>Happy Birthday, My Love! 🎉❤️</h1>
+        <p>Here are some of our sweetest memories together.</p>
+        
+        <div class="content-container">
+            <h2>📸 Our Memories</h2>
+            <div class="gallery">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/inkspire.jpg" alt="Memory 1">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>My love, I want you to know that you are such an amazing person and always be yourself. I love you the most!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/cutie.jpg" alt="Memory 2">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>One of my favourite pictures that I like when we are in early stage of our relationship ❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/dinner_lurve.jpg" alt="Memory 3">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Thank you for treat me to dinner for my birthday baby!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>💌 A Special Love Letter</h2>
+            <p>My love, every day with you is a gift. You are my sunshine, my joy, and my greatest adventure. Happy birthday, my darling! ❤️</p>
+
+            <div id="compliments" class="hidden">
+                <h2>🌸 Get a Compliment</h2>
+                <button onclick="generateCompliment()">Press for Compliment</button>
+                <p id="compliment"></p>
+            </div>
+
+            <div id="video" class="hidden">
+                <h2>🎥 Our Video Memories</h2>
+                <video width="320" height="240" controls>
+                    <source src="video/me with jane.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h2>⏳ Our Journey</h2>
+            <div class="timeline">
+                <div><strong>August 2022:</strong> You stole my heart completely ❤️</div>
+                <div><strong>October 2022:</strong> We met for the first time 💕</div>
+                <div><strong>December 2022:</strong> Our first date together ✈️</div>
+            </div>
+
+            <div id="quiz" class="hidden">
+                <h2>❓ Love Quiz</h2>
+                <p>When did we have our first date?</p>
+                <button onclick="checkAnswer('04/12/2022')">04/12/2022</button>
+                <button onclick="checkAnswer('11/12/2022')">11/12/2022</button>
+                <button onclick="checkAnswer('18/12/2022')">18/12/2022</button>
+                <p id="quiz-result"></p>
+            </div>
+
+            <h2>🎶 Play Our Special Song</h2>
+            <button onclick="toggleMusic()">Play/Pause Music</button>
+            <button class="next-page" onclick="nextPage()">➡️</button>
+            <audio id="bg-music" controls style="display: none;">
+                <source src="audio/y2mate.com - Taylor Swift  august Official Lyric Video.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <script src="mainpage.js"></script>
+</body>
+</html>
